@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 
-
+// Import routes
+const userRoutes = require('./routes/user');
 
 // Get credentials from environment variables
 const credentials = {
@@ -39,6 +40,8 @@ app.use((req, res, next) => {
     next();
 });
 
+// Using user routes
+app.use('/api/user', userRoutes);
 
 
 module.exports = app;
