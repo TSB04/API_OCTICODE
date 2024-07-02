@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Environment configuration file
+.env
+
+# Optional: Log files
+*.log
+
+# Optional: IDE/Editor specific files
+.vscode/
+.idea/
+*.iml
+*.swp
+
+# Optional: OS specific files
+.DS_Store
+Thumbs.db
